@@ -1,0 +1,113 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+@media screen and (max-width: 576px){
+
+    #logo{
+        height: 50px;
+        width: auto;
+    }
+  
+}
+
+
+@media screen and (min-width: 576px){
+
+    #logo{
+        height: 80px;
+        width: auto;
+    }
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+        "desinsectacion  desratizacion desinfeccion ";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+        }
+}
+#desinsectacion{
+    grid-area: desinsectacion;
+}
+#desratizacion{
+    grid-area: desratizacion;
+}
+#desinfeccion{
+    grid-area: desinfeccion;
+}
+
+#marcas{
+   background-color: blue;
+}
+#presentacion{
+    text-align: justify;
+
+}
+.card-text{
+    text-align: justify;
+}
+.card-text p{
+    text-align: center;
+}
+.card-img{
+    border-radius: 25px;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    animation-duration: 1s;
+    transition: 1s;
+}
+.card-img:hover{
+    transform: scale(2);
+}
+.img_quehacemos{
+    border-radius: 25px;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    border: solid black 1px;
+    animation-duration: 1s;
+    transition: 1s;
+}
+.img_quehacemos:hover{
+    transform: scale(2);
+}
+
+#parrafo_quienes{
+    animation-duration: 5s;
+animation-name: aparecer;
+margin: 15px ;
+}
+@keyframes aparecer {
+    from {
+      margin-left: 150%;          
+    }   
+}
+.btn-outline-success {
+    color: white;
+    border-color: white;
+}
+#h2_quehacemos{
+    text-align: center;
+    margin-top: 25px;
+}
+.card-img{
+    align-self:  center;
+
+}
+.card{
+    border: none;
+}
+.grilla{
+    display: grid;
+    grid-template-areas: 
+    "esinsectacion  desratizacion desinfeccion ";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 5px;
+    }
